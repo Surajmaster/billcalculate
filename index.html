@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Bill</title>
+    <script>
+        function elec1() {
+            var unit1 = Number(document.getElementById("unit1").value);
+            var un1 = unit1 * 8;
+            var rent1 = Number(document.getElementById("rent1").value);
+            var mtnc1 = Number(document.getElementById("mtnc1").value);
+            var amt1 = un1 + rent1 + mtnc1;
+            document.getElementById("amt1").innerHTML = amt1;
+            return false;
+
+
+        }
+        function elec2() {
+            var unit2 = Number(document.getElementById("unit2").value);
+            var un2 = unit2 * 8;
+            var rent2 = Number(document.getElementById("rent2").value);
+            var mtnc2 = Number(document.getElementById("mtnc2").value);
+            var amt2 = un2 + rent2 + mtnc2;
+            document.getElementById("amt2").innerHTML = amt2;
+            return false;
+        }
+
+        function elec3() {
+            var unit3 = Number(document.getElementById("unit3").value);
+            var un3 = unit3 * 8;
+            var rent3 = Number(document.getElementById("rent3").value);
+            var mtnc3 = Number(document.getElementById("mtnc3").value);
+            var amt3 = un3 + rent3 + mtnc3;
+            document.getElementById("amt3").innerHTML = amt3;
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calculation of House Rent and Electricty Bill</h1>
+        <h3>Raj Deo Rai(4th floor)</h3>
+        <label>Enter the no. of units (in kwh)</label> &nbsp;&nbsp;&nbsp;<input id="unit1" type="text">&nbsp;<span
+            id="un1"></span><br><br>
+        <label>Enter the rent</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+            id="rent1" type="text"><br><br>
+        <label>Enter the maintenance charge</label>&nbsp;&nbsp;&nbsp;&nbsp;<input id="mtnc1" type="text"><br>
+        <h2>Amount paid : <span id="amt1"></span> </h2>
+        <input type="button" id="btn" value="Click me" onclick="elec1()">
+
+        <h3>Raj Deo Rai(2nd floor)</h3>
+        <label>Enter the no. of units (in kwh)</label> &nbsp;&nbsp;&nbsp;<input id="unit2" type="text">&nbsp;<br><br>
+        <label>Enter the rent</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+            id="rent2" type="text"><br><br>
+        <label>Enter the maintenance charge</label>&nbsp;&nbsp;&nbsp;&nbsp;<input id="mtnc2" type="text"><br>
+        <h2>Amount paid : <span id="amt2"></span> </h2>
+        <input type="button" id="btn" value="Click me" onclick="elec2()">
+
+        <h3>Shankar Mahto(3rd floor)</h3>
+        <label>Enter the no. of units (in kwh)</label> &nbsp;&nbsp;&nbsp;<input id="unit3" type="text">&nbsp;<br><br>
+        <label>Enter the rent</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
+            id="rent3" type="text"><br><br>
+        <label>Enter the maintenance charge</label>&nbsp;&nbsp;&nbsp;&nbsp;<input id="mtnc3" type="text"><br>
+        <h2>Amount paid : <span id="amt3"></span> </h2>
+        <input type="button" id="btn" value="Click me" onclick="elec3()"><br>
+
+
+
+
+    </div>
+
+</body>
+
+</html>
